@@ -21,10 +21,10 @@ class ServiceProvider extends Provider
         // Executar o seeder aqui
         $this->app->booted(function () {
             // Executar as migrações antes do seeder
-            $this->app['migrate.command']->call('migrate');
+            Artisan::call('migrate');
 
             // Executar o seeder aqui
-            $this->app['seed.command']->call('db:seed', ['--class' => 'Josecaseiro\\AngolanGeo\\Seeders\\AngolanGeoDatabaseSeeder']);
+            Artisan::call('db:seed', ['--class' => 'Josecaseiro\\AngolanGeo\\Seeders\\AngolanGeoDatabaseSeeder']);
         });
     }
 

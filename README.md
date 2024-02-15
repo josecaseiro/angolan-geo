@@ -21,16 +21,23 @@ composer require josecaseiro/angolan-geo
 use Josecaseiro\AngolanGeo\Models\Provincia;
 use Josecaseiro\AngolanGeo\Models\Municipio;
 
-// Create Provincia instance
-$luanda = new Provincia(['name' => 'Luanda']);
-$luanda->save();
+// Get all Provinces
+$provincias = Provincia::all();
 
-// Populate municipalities within Luanda
-$municipio1 = new Municipio(['name' => 'Municipio 1', 'provincia_id' => $luanda->id]);
-$municipio1->save();
+// Get a Province by name
+$province = Provincia::where('name', 'Luanda')->first();
 
-$municipio2 = new Municipio(['name' => 'Municipio 2', 'provincia_id' => $luanda->id]);
-$municipio2->save();
+// Get all Municipios
+$municipios = Municipio::all();
+
+// Get Municipios by a Province
+$luanda = Provincia::where('name', 'Luanda')->first();
+$municipiosLuanda = $luanda->municipios;
+
+
+// From a Municipio you can get its Province
+$municipio = Municipio::first();
+$prov = $municipio->provincia;
 ```
 
 ## Features

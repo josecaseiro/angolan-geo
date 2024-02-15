@@ -46,7 +46,7 @@ class ServiceProvider extends Provider
             'info' => 'fg=black;bg=green',
         ];
 
-        $this->output("<fg=black;bg=white;options=bold>[AngolanGeo]</> <fg={$styles[$style]}>$message</>");
+        $this->output("<fg=black;bg=white;options=bold>[AngolanGeo]</> <{$styles[$style]}>$message</>");
     }
 
     // Método auxiliar para exibir resultados dos comandos

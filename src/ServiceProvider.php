@@ -9,17 +9,18 @@ class ServiceProvider extends Provider
 {
     public function boot()
     {
+        // Mensagem informativa antes de executar as migrações
+        $this->info('**Running AngolanGeo migrations...**', 'comment');
+
+        // Executar as migrações diretamente do Service Provider
+        $outputMigrate = Artisan::output();
+        Artisan::call('migrate', [
+            '--path' => __DIR__ . '/migrations',
+        ]);
+        $this->outputCommandResults('Migration', $outputMigrate);
+
         // Executar o seeder aqui
         $this->app->booted(function () {
-            // Mensagem informativa antes de executar as migrações
-            $this->info('**Running AngolanGeo migrations...**', 'comment');
-
-            // Executar as migrações diretamente do Service Provider
-            $outputMigrate = Artisan::output();
-            Artisan::call('migrate', [
-                '--path' => __DIR__ . '/migrations',
-            ]);
-            $this->outputCommandResults('Migration', $outputMigrate);
 
             // Mensagem informativa antes de executar o seeder
             $this->info('**Running AngolanGeo seeder...**', 'comment');

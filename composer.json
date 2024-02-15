@@ -1,5 +1,4 @@
 {
-    "version": "1.0.0",
     "name": "josecaseiro/angolan-geo",
     "description": "The angolan-geo Composer package is crafted to streamline the process of building models for Provincia (Provinces) and Municipio (Municipalities) in PHP applications, specifically tailored to the unique geographical structure of Angola. This package is a valuable asset for developers working on projects that demand accurate location-based information within the Angolan context.",
     "type": "library",

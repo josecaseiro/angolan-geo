@@ -46,15 +46,21 @@ class ServiceProvider extends Provider
             'info' => 'fg=black;bg=green',
         ];
 
-        $this->line("<fg=black;bg=white;options=bold>[AngolanGeo]</> <fg={$styles[$style]}>$message</>");
+        $this->output("<fg=black;bg=white;options=bold>[AngolanGeo]</> <fg={$styles[$style]}>$message</>");
     }
 
     // Método auxiliar para exibir resultados dos comandos
     protected function outputCommandResults($commandName, $output)
     {
         if (!empty(trim($output))) {
-            $this->line("\n<fg=black;bg=white;options=bold>[{$commandName} Output]</>");
-            $this->line($output);
+            $this->output("\n<fg=black;bg=white;options=bold>[{$commandName} Output]</>");
+            $this->output($output);
         }
+    }
+
+    // Método auxiliar para imprimir a linha
+    protected function output($text)
+    {
+        $this->command->getOutput()->writeln($text);
     }
 }

@@ -11,6 +11,9 @@ class ProvinciaSeeder extends Seeder
 {
     public function run()
     {
+        DB::table('provincias')->truncate();
+        DB::table('municipios')->truncate();
+
         Provincia::create(['name' => 'Bengo']);
         Municipio::created(['name' => 'Ambriz', 'provincia_id' => 1]);
         Municipio::created(['name' => 'Bula Atumba', 'provincia_id' => 1]);

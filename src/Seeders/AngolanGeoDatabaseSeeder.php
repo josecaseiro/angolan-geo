@@ -4,7 +4,7 @@ namespace Josecaseiro\AngolanGeo\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class AngolanGeoDatabaseSeeder extends Seeder
 {
     public function run()
     {

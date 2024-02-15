@@ -5,6 +5,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Artisan;
 
 class CreateMunicipiosTable extends Migration
 {
@@ -17,6 +18,8 @@ class CreateMunicipiosTable extends Migration
             // Add any additional fields you may need
             $table->timestamps();
         });
+
+        Artisan::call('db:seed', ['--class' => 'AngolanGeoDatabaseSeeder']);
     }
 
     public function down()

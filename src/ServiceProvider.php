@@ -9,7 +9,7 @@ class ServiceProvider extends Provider
 {
     public function boot()
     {
-        Artisan::call('db:seed', ['--class' => 'DatabaseSeeder']);
+        //Artisan::call('db:seed', ['--class' => 'AngolanGeoDatabaseSeeder']);
     }
 
     public function register()

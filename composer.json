@@ -15,8 +15,12 @@
     ],
     "keywords": [
         "laravel",
-        "package"
+        "package",
+        "angola",
+        "provincias",
+        "municipios"
     ],
+    "license": "MIT",
     "require": {
         "illuminate/database": "^8.0"
     },

@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Josecaseiro\\AngolanGeo\\AppServiceProvider"
+                "Josecaseiro\\AngolanGeo\\ServiceProvider"
             ],
             "aliases": {
                 "Packagename": "Josecaseiro\\AngolanGeo\\Facades\\AngolanGeo"

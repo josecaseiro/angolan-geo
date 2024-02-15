@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as Provider;
 use Illuminate\Support\Facades\Artisan;
 
-class AppServiceProvider extends ServiceProvider
+class ServiceProvider extends Provider
 {
     public function boot()
     {

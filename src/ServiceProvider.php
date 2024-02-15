@@ -10,9 +10,22 @@ class ServiceProvider extends Provider
     public function boot()
     {
         //Artisan::call('db:seed', ['--class' => 'AngolanGeoDatabaseSeeder']);
-        $this->publishes([
-            __DIR__ . '/migrations' => database_path('migrations'),
-        ], 'migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/migrations');
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/migrations' => database_path('migrations'),
+            ], 'migrations');
+        }
+
+        // Executar o seeder aqui
+        $this->app->booted(function () {
+            // Executar as migrações antes do seeder
+            $this->app['migrate.command']->call('migrate');
+
+            // Executar o seeder aqui
+            $this->app['seed.command']->call('db:seed', ['--class' => 'Josecaseiro\\AngolanGeo\\Seeders\\AngolanGeoDatabaseSeeder']);
+        });
     }
 
     public function register()

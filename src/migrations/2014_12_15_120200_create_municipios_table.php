@@ -19,7 +19,7 @@ class CreateMunicipiosTable extends Migration
             $table->timestamps();
         });
 
-        Artisan::call('db:seed', ['--class' => 'Josecaseiro\\AngolanGeo\\Seeders\\AngolanGeoDatabaseSeeder']);
+        //Artisan::call('db:seed', ['--class' => 'Josecaseiro\\AngolanGeo\\Seeders\\AngolanGeoDatabaseSeeder']);
     }
 
     public function down()

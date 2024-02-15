@@ -53,7 +53,7 @@ class ServiceProvider extends Provider
     protected function outputCommandResults($commandName, $output)
     {
         if (!empty(trim($output))) {
-            $this->output("\n<fg=geen;bg=white;options=bold>[{$commandName} Output]</>");
+            $this->output("\n<fg=green;bg=white;options=bold>[{$commandName} Output]</>");
             if ($output != null)
                 $this->output($output);
         }

@@ -11,7 +11,7 @@ class ServiceProvider extends Provider
     {
         //Artisan::call('db:seed', ['--class' => 'AngolanGeoDatabaseSeeder']);
         $this->publishes([
-            __DIR__ . '/src/migrations' => database_path('migrations'),
+            __DIR__ . '/migrations' => database_path('migrations'),
         ], 'migrations');
     }
 

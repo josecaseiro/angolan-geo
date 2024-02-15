@@ -6,6 +6,7 @@ namespace Josecaseiro\AngolanGeo\Seeders;
 use Josecaseiro\AngolanGeo\Models\Municipio;
 use Illuminate\Database\Seeder;
 use Josecaseiro\AngolanGeo\Models\Provincia;
+use DB;
 
 class ProvinciaSeeder extends Seeder
 {

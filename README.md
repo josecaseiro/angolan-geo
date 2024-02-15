@@ -1,7 +1,3 @@
-
-Certainly! Here's a package description with tags that you can use in your `README.md`:
-
-```markdown
 # Angolan Geo Package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/josecaseiro/angolan-geo.svg?style=flat-square)](https://packagist.org/packages/josecaseiro/angolan-geo)

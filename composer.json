@@ -21,9 +21,7 @@
         "municipios"
     ],
     "license": "MIT",
-    "require": {
-        "illuminate/database": "^8.0"
-    },
+    "require": {},
     "minimum-stability": "stable",
     "prefer-stable": true,
     "config": {

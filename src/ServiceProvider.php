@@ -42,7 +42,7 @@ class ServiceProvider extends Provider
     protected function info($message, $style = null)
     {
         $styles = [
-            'comment' => 'fg=white;bg=red',
+            'comment' => 'fg=white;bg=green',
             'info' => 'fg=black;bg=green',
         ];
 
@@ -53,8 +53,9 @@ class ServiceProvider extends Provider
     protected function outputCommandResults($commandName, $output)
     {
         if (!empty(trim($output))) {
-            $this->output("\n<fg=black;bg=white;options=bold>[{$commandName} Output]</>");
-            $this->output($output);
+            $this->output("\n<fg=geen;bg=white;options=bold>[{$commandName} Output]</>");
+            if ($output != null)
+                $this->output($output);
         }
     }
 

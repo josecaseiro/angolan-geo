@@ -61,6 +61,7 @@ class ServiceProvider extends Provider
     // Método auxiliar para imprimir a linha
     protected function output($text)
     {
-        $this->command->getOutput()->writeln($text);
+        $out = new \Symfony\Component\Console\Output\ConsoleOutput();
+        $out->writeln($text);
     }
 }

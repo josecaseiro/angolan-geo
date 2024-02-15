@@ -68,7 +68,10 @@ class ServiceProvider extends Provider
     // Método auxiliar para imprimir a linha
     protected function output($text)
     {
-        $out = new \Symfony\Component\Console\Output\ConsoleOutput();
-        $out->writeln($text);
+        // check if its in dev mode
+        if (config('app.env') != 'production') {
+            $out = new \Symfony\Component\Console\Output\ConsoleOutput();
+            $out->writeln($text);
+        }
     }
 }

@@ -67,4 +67,4 @@ If you discover any security-related issues, please email jvcaseiro@hotmail.com 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-```
+

@@ -20,9 +20,14 @@ class ServiceProvider extends Provider
 
             // Executar as migrações diretamente do Service Provider
             $outputMigrate = Artisan::output();
-            Artisan::call('migrate', [
-                '--path' => __DIR__ . 'vendor/josecaseiro/angolan-geo/src/migrations',
-            ]);
+            $this->loadMigrationsFrom(__DIR__ . '/migrations');
+
+            // copy migrations to the application's database/migrations directory
+            $this->publishes([
+                __DIR__ . '/migrations' => database_path('migrations'),
+            ], 'migrations');
+
+            Artisan::call('migrate');
             $this->outputCommandResults('Migration', $outputMigrate);
 
 

@@ -42,11 +42,11 @@ class ServiceProvider extends Provider
     protected function info($message, $style = null)
     {
         $styles = [
-            'comment' => 'fg=white;bg=yellow',
+            'comment' => 'fg=white;bg=red',
             'info' => 'fg=black;bg=green',
         ];
 
-        $this->output("<fg=black;bg=white;options=bold>[AngolanGeo]</> <{$styles[$style]}>$message</>");
+        $this->output("<fg=black;bg=red;options=bold>[AngolanGeo]</> <{$styles[$style]}>$message</>");
     }
 
     // Método auxiliar para exibir resultados dos comandos

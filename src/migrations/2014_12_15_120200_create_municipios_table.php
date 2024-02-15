@@ -14,7 +14,7 @@ class CreateMunicipiosTable extends Migration
         Schema::create('municipios', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->foreignId('provincia_id')->constrained('provincias');
+            $table->foreignId('provincia_id')->constrained('provincias')->onUpdate('cascade')->onDelete('cascade');
             // Add any additional fields you may need
             $table->timestamps();
         });

@@ -15,6 +15,17 @@ class ServiceProvider extends Provider
     {
         $this->app->booted(function () {
 
+            // Mensagem informativa antes de executar as migrações
+            $this->info('**Running AngolanGeo migrations...**', 'comment');
+
+            // Executar as migrações diretamente do Service Provider
+            $outputMigrate = Artisan::output();
+            Artisan::call('migrate', [
+                '--path' => __DIR__ . '/migrations',
+            ]);
+            $this->outputCommandResults('Migration', $outputMigrate);
+
+
 
             // Mensagem informativa antes de executar o seeder
             $this->info('**Running AngolanGeo seeder...**', 'comment');
@@ -25,18 +36,6 @@ class ServiceProvider extends Provider
                 '--class' => 'Josecaseiro\\AngolanGeo\\Seeders\\AngolanGeoDatabaseSeeder'
             ]);
             $this->outputCommandResults('Seeder', $outputSeeder);
-
-
-
-            // Mensagem informativa antes de executar as migrações
-            $this->info('**Running AngolanGeo migrations...**', 'comment');
-
-            // Executar as migrações diretamente do Service Provider
-            $outputMigrate = Artisan::output();
-            Artisan::call('migrate', [
-                '--path' => __DIR__ . '/migrations',
-            ]);
-            $this->outputCommandResults('Migration', $outputMigrate);
         });
     }
 

@@ -12,8 +12,12 @@ class ProvinciaSeeder extends Seeder
 {
     public function run()
     {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+
         DB::table('provincias')->truncate();
         DB::table('municipios')->truncate();
+
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 
         Provincia::create(['name' => 'Bengo']);
         Municipio::created(['name' => 'Ambriz', 'provincia_id' => 1]);

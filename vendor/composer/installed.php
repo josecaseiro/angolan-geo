@@ -1,7 +1,7 @@
 <?php return array(
     'root' => array(
         'name' => 'josecaseiro/angolan-geo',
-        'pretty_version' => '1.0.0+no-version-set',
+        'pretty_version' => '1.0.0',
         'version' => '1.0.0.0',
         'reference' => NULL,
         'type' => 'library',
@@ -83,7 +83,7 @@
             'dev_requirement' => false,
         ),
         'josecaseiro/angolan-geo' => array(
-            'pretty_version' => '1.0.0+no-version-set',
+            'pretty_version' => '1.0.0',
             'version' => '1.0.0.0',
             'reference' => NULL,
             'type' => 'library',

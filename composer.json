@@ -34,11 +34,5 @@
                 "Packagename": "Josecaseiro\\AngolanGeo\\Facades\\AngolanGeo"
             }
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/josecaseiro/angolan-geo"
-        }
-    ]
+    }
 }

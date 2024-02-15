@@ -1,10 +1,11 @@
 <?php
 
 // database/seeders/ProvinciaSeeder.php
+namespace Josecaseiro\AngolanGeo\Seeders;
 
-use App\Models\Municipio;
+use Josecaseiro\AngolanGeo\Models\Municipio;
 use Illuminate\Database\Seeder;
-use App\Models\Provincia;
+use Josecaseiro\AngolanGeo\Models\Provincia;
 
 class ProvinciaSeeder extends Seeder
 {

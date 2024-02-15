@@ -2,7 +2,7 @@
 
 // app/Models/Municipio.php
 
-namespace App\Models;
+namespace Josecaseiro\AngolanGeo\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

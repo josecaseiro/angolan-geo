@@ -2,7 +2,7 @@
 
 // app/Models/Provincia.php
 
-namespace App\Models;
+namespace Josecaseiro\AngolanGeo\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;

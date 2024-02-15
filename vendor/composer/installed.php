@@ -3,7 +3,7 @@
         'name' => 'josecaseiro/angolan-geo',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '418c983654640160b282216c262f46bc8f1379a9',
+        'reference' => 'f31572d39c1f67d24f52deb2e120faab848e6433',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -85,7 +85,7 @@
         'josecaseiro/angolan-geo' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '418c983654640160b282216c262f46bc8f1379a9',
+            'reference' => 'f31572d39c1f67d24f52deb2e120faab848e6433',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

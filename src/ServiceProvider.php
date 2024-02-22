@@ -26,6 +26,11 @@ class ServiceProvider extends Provider
             $this->publishes([
                 __DIR__ . '/migrations' => database_path('migrations'),
             ], 'migrations');
+
+            // copy seeders to the application's database/seeders directory
+            $this->publishes([
+                __DIR__ . '/Seeders' => database_path('seeders'),
+            ], 'seeders');
         });
     }
 

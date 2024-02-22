@@ -69,9 +69,7 @@ class ServiceProvider extends Provider
     protected function output($text)
     {
         // check if its in dev mode
-        if (config('app.env') != 'production') {
-            $out = new \Symfony\Component\Console\Output\ConsoleOutput();
-            $out->writeln($text);
-        }
+        $out = new \Symfony\Component\Console\Output\ConsoleOutput();
+        $out->writeln($text);
     }
 }

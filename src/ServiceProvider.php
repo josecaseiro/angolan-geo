@@ -16,7 +16,7 @@ class ServiceProvider extends Provider
         $this->app->booted(function () {
 
             // Mensagem informativa antes de executar as migrações
-            $this->info('**Running AngolanGeo migrations...**', 'comment');
+            $this->info('**Copying AngolanGeo migrations...**', 'comment');
 
             // Executar as migrações diretamente do Service Provider
             $outputMigrate = Artisan::output();
@@ -54,7 +54,9 @@ class ServiceProvider extends Provider
     protected function output($text)
     {
         // check if its in dev mode
-        $out = new \Symfony\Component\Console\Output\ConsoleOutput();
-        $out->writeln($text);
+        if (config('app.env') != 'production') {
+            $out = new \Symfony\Component\Console\Output\ConsoleOutput();
+            $out->writeln($text);
+        }
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Seeders;
+namespace Josecaseiro\AngolanGeo\Seeders;
 
 use Illuminate\Database\Seeder;
 

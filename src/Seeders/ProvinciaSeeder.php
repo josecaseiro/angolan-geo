@@ -1,7 +1,7 @@
 <?php
 
 // database/seeders/ProvinciaSeeder.php
-namespace Database\Seeders;
+namespace Josecaseiro\AngolanGeo\Seeders;
 
 use Josecaseiro\AngolanGeo\Models\Municipio;
 use Illuminate\Database\Seeder;

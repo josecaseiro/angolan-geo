@@ -26,21 +26,6 @@ class ServiceProvider extends Provider
             $this->publishes([
                 __DIR__ . '/migrations' => database_path('migrations'),
             ], 'migrations');
-
-            Artisan::call('migrate');
-            $this->outputCommandResults('Migration', $outputMigrate);
-
-
-
-            // Mensagem informativa antes de executar o seeder
-            $this->info('**Running AngolanGeo seeder...**', 'comment');
-
-            // Executar o seeder aqui
-            $outputSeeder = Artisan::output();
-            Artisan::call('db:seed', [
-                '--class' => 'Josecaseiro\\AngolanGeo\\Seeders\\AngolanGeoDatabaseSeeder'
-            ]);
-            $this->outputCommandResults('Seeder', $outputSeeder);
         });
     }
 

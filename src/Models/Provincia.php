@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Provincia extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'capital'];
 
     /**
      * Get all of the municipios for the Province

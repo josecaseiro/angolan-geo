@@ -17,7 +17,7 @@ class ProvinciaSeeder extends Seeder
             foreach ($provincias as $prov) {
                 $prov->delete();
             }
-            Provincia::create(['name' => 'Bengo']);
+            Provincia::create(['name' => 'Bengo', 'capital' => 'Caxito']);
             Municipio::create(['name' => 'Ambriz', 'provincia_id' => 1]);
             Municipio::create(['name' => 'Bula Atumba', 'provincia_id' => 1]);
             Municipio::create(['name' => 'Dande', 'provincia_id' => 1]);
@@ -25,7 +25,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Nambuangongo', 'provincia_id' => 1]);
             Municipio::create(['name' => 'Pango Aluquém', 'provincia_id' => 1]);
 
-            Provincia::create(['name' => 'Benguela']);
+            Provincia::create(['name' => 'Benguela', 'capital' =>'Benguela']);
             Municipio::create(['name' => 'Balombo', 'provincia_id' => 2]);
             Municipio::create(['name' => 'Baía Farta', 'provincia_id' => 2]);
             Municipio::create(['name' => 'Benguela', 'provincia_id' => 2]);
@@ -37,7 +37,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Ganda', 'provincia_id' => 2]);
             Municipio::create(['name' => 'Lobito', 'provincia_id' => 2]);
 
-            Provincia::create(['name' => 'Bié']);
+            Provincia::create(['name' => 'Bié', 'capital' =>'Kuito']);
             Municipio::create(['name' => 'Andulo', 'provincia_id' => 3]);
             Municipio::create(['name' => 'Camacupa', 'provincia_id' => 3]);
             Municipio::create(['name' => 'Catabola', 'provincia_id' => 3]);
@@ -49,13 +49,13 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Chitembo', 'provincia_id' => 3]);
             Municipio::create(['name' => 'Ucuma', 'provincia_id' => 3]);
 
-            Provincia::create(['name' => 'Cabinda']);
+            Provincia::create(['name' => 'Cabinda', 'capital' =>'Cabinda']);
             Municipio::create(['name' => 'Belize', 'provincia_id' => 4]);
             Municipio::create(['name' => 'Buco Zau', 'provincia_id' => 4]);
             Municipio::create(['name' => 'Cabinda', 'provincia_id' => 4]);
             Municipio::create(['name' => 'Cacongo', 'provincia_id' => 4]);
 
-            Provincia::create(['name' => 'Cuando Cubango']);
+            Provincia::create(['name' => 'Cuando Cubango', 'capital' =>'Menongue']);
             Municipio::create(['name' => 'Calai', 'provincia_id' => 5]);
             Municipio::create(['name' => 'Cuangar', 'provincia_id' => 5]);
             Municipio::create(['name' => 'Cuchi', 'provincia_id' => 5]);
@@ -66,7 +66,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Nancova', 'provincia_id' => 5]);
             Municipio::create(['name' => 'Rivungo', 'provincia_id' => 5]);
 
-            Provincia::create(['name' => 'Cuanza Norte']);
+            Provincia::create(['name' => 'Cuanza Norte', 'capital' =>'N’Dalatando']);
             Municipio::create(['name' => 'Ambaca', 'provincia_id' => 6]);
             Municipio::create(['name' => 'Banga', 'provincia_id' => 6]);
             Municipio::create(['name' => 'Bolongongo', 'provincia_id' => 6]);
@@ -77,7 +77,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Quiculungo', 'provincia_id' => 6]);
             Municipio::create(['name' => 'Samba Caju', 'provincia_id' => 6]);
 
-            Provincia::create(['name' => 'Cuanza Sul']);
+            Provincia::create(['name' => 'Cuanza Sul', 'capital' =>'Sumbe']);
             Municipio::create(['name' => 'Amboim', 'provincia_id' => 7]);
             Municipio::create(['name' => 'Cassongue', 'provincia_id' => 7]);
             Municipio::create(['name' => 'Conda', 'provincia_id' => 7]);
@@ -90,7 +90,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Seles', 'provincia_id' => 7]);
             Municipio::create(['name' => 'Sumbe', 'provincia_id' => 7]);
 
-            Provincia::create(['name' => 'Cunene']);
+            Provincia::create(['name' => 'Cunene', 'capital' =>'Ondjiva']);
             Municipio::create(['name' => 'Cahama', 'provincia_id' => 8]);
             Municipio::create(['name' => 'Cuanhama', 'provincia_id' => 8]);
             Municipio::create(['name' => 'Curoca', 'provincia_id' => 8]);
@@ -98,7 +98,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Namacunde', 'provincia_id' => 8]);
             Municipio::create(['name' => 'Ombadja', 'provincia_id' => 8]);
 
-            Provincia::create(['name' => 'Huambo']);
+            Provincia::create(['name' => 'Huambo', 'capital' =>'Huambo']);
             Municipio::create(['name' => 'Bailundo', 'provincia_id' => 9]);
             Municipio::create(['name' => 'Caála', 'provincia_id' => 9]);
             Municipio::create(['name' => 'Ekunha', 'provincia_id' => 9]);
@@ -110,7 +110,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Tchindjenje', 'provincia_id' => 9]);
             Municipio::create(['name' => 'Ucuma', 'provincia_id' => 9]);
 
-            Provincia::create(['name' => 'Huíla']);
+            Provincia::create(['name' => 'Huíla', 'capital' =>'Lubango']);
             Municipio::create(['name' => 'Caconda', 'provincia_id' => 10]);
             Municipio::create(['name' => 'Cacula', 'provincia_id' => 10]);
             Municipio::create(['name' => 'Caluquembe', 'provincia_id' => 10]);
@@ -124,7 +124,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Matala', 'provincia_id' => 10]);
             Municipio::create(['name' => 'Quilengues', 'provincia_id' => 10]);
 
-            Provincia::create(['name' => 'Luanda']);
+            Provincia::create(['name' => 'Luanda', 'capital' =>'Luanda']);
             Municipio::create(['name' => 'Belas', 'provincia_id' => 11]);
             Municipio::create(['name' => 'Cacuaco', 'provincia_id' => 11]);
             Municipio::create(['name' => 'Cazenga', 'provincia_id' => 11]);
@@ -135,7 +135,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Viana', 'provincia_id' => 11]);
             Municipio::create(['name' => 'Vila de Cacuaco', 'provincia_id' => 11]);
 
-            Provincia::create(['name' => 'Lunda Norte']);
+            Provincia::create(['name' => 'Lunda Norte', 'capital' =>'Dundo']);
             Municipio::create(['name' => 'Cambulo', 'provincia_id' => 12]);
             Municipio::create(['name' => 'Capenda-Camulemba', 'provincia_id' => 12]);
             Municipio::create(['name' => 'Caungula', 'provincia_id' => 12]);
@@ -145,13 +145,13 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Lóvua', 'provincia_id' => 12]);
             Municipio::create(['name' => 'Lubalo', 'provincia_id' => 12]);
 
-            Provincia::create(['name' => 'Lunda Sul']);
+            Provincia::create(['name' => 'Lunda Sul', 'capital' =>'Saurimo']);
             Municipio::create(['name' => 'Cacolo', 'provincia_id' => 13]);
             Municipio::create(['name' => 'Dala', 'provincia_id' => 13]);
             Municipio::create(['name' => 'Muconda', 'provincia_id' => 13]);
             Municipio::create(['name' => 'Saurimo', 'provincia_id' => 13]);
 
-            Provincia::create(['name' => 'Malanje']);
+            Provincia::create(['name' => 'Malanje', 'capital' =>'Malanje']);
             Municipio::create(['name' => 'Cacuso', 'provincia_id' => 14]);
             Municipio::create(['name' => 'Calandula', 'provincia_id' => 14]);
             Municipio::create(['name' => 'Cambundi-Catembo', 'provincia_id' => 14]);
@@ -162,7 +162,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Mucari', 'provincia_id' => 14]);
             Municipio::create(['name' => 'Quela', 'provincia_id' => 14]);
 
-            Provincia::create(['name' => 'Moxico']);
+            Provincia::create(['name' => 'Moxico', 'capital' =>'Luena']);
             Municipio::create(['name' => 'Alto Zambeze', 'provincia_id' => 15]);
             Municipio::create(['name' => 'Bundas', 'provincia_id' => 15]);
             Municipio::create(['name' => 'Camanongue', 'provincia_id' => 15]);
@@ -182,13 +182,13 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Namacunde', 'provincia_id' => 15]);
             Municipio::create(['name' => 'Ombadja', 'provincia_id' => 15]);
 
-            Provincia::create(['name' => 'Namibe']);
+            Provincia::create(['name' => 'Namibe', 'capital' =>'Namibe']);
             Municipio::create(['name' => 'Bibala', 'provincia_id' => 16]);
             Municipio::create(['name' => 'Camucuio', 'provincia_id' => 16]);
             Municipio::create(['name' => 'Moçâmedes', 'provincia_id' => 16]);
             Municipio::create(['name' => 'Tômbua', 'provincia_id' => 16]);
 
-            Provincia::create(['name' => 'Uíge']);
+            Provincia::create(['name' => 'Uíge', 'capital' =>'Uíge']);
             Municipio::create(['name' => 'Alto Cauale', 'provincia_id' => 17]);
             Municipio::create(['name' => 'Ambuila', 'provincia_id' => 17]);
             Municipio::create(['name' => 'Bembe', 'provincia_id' => 17]);
@@ -203,7 +203,7 @@ class ProvinciaSeeder extends Seeder
             Municipio::create(['name' => 'Songo', 'provincia_id' => 17]);
             Municipio::create(['name' => 'Uíge', 'provincia_id' => 17]);
 
-            Provincia::create(['name' => 'Zaire']);
+            Provincia::create(['name' => 'Zaire', 'capital' =>'M´Banza Congo']);
             Municipio::create(['name' => 'Cuimba', 'provincia_id' => 18]);
             Municipio::create(['name' => "M'banza Kongo", 'provincia_id' => 18]);
             Municipio::create(['name' => 'Noqui', 'provincia_id' => 18]);

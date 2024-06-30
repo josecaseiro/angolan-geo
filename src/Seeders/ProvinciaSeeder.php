@@ -13,7 +13,7 @@ class ProvinciaSeeder extends Seeder
     public function run()
     {
         if (Provincia::count() != 18 || Municipio::count() < 164) {
-            $prov = Provincia::all();
+            $provincias = Provincia::all();
             foreach ($provincias as $prov) {
                 $prov->delete();
             }

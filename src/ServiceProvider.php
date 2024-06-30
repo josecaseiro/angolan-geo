@@ -16,7 +16,7 @@ class ServiceProvider extends Provider
         $this->app->booted(function () {
 
             // Mensagem informativa antes de executar as migrações
-            $this->info('**Copying AngolanGeo migrations...**', 'comment');
+            // $this->info('**Copying AngolanGeo migrations...**', 'comment');
 
             // Executar as migrações diretamente do Service Provider
             $outputMigrate = Artisan::output();

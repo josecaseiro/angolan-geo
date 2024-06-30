@@ -8,7 +8,7 @@ class FixTypoInProvincias extends Migration
 {
     public function up()
     {
-       if (!Schema::hasColumn('provincias', 'captital')) {
+       if (Schema::hasColumn('provincias', 'captital')) {
             Schema::table('provincias', function (Blueprint $table) {
                 $table->dropColumn('captital');
             });

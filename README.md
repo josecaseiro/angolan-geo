@@ -15,6 +15,39 @@ You can install the package via composer:
 composer require josecaseiro/angolan-geo
 ```
 
+After installing, you need to add the following line to the run method in your DatabaseSeeder file:
+
+```php
+$this->call([ProvinciaSeeder::class]);
+```
+
+Your DatabaseSeeder under database\seeders should look like this:
+```php
+<?php
+
+namespace Database\Seeders;
+
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\User;
+use Illuminate\Database\Seeder;
+use Josecaseiro\AngolanGeo\Seeders\ProvinciaSeeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     */
+    public function run(): void
+    {
+        $this->call([ProvinciaSeeder::class]);
+    }
+}
+```
+
+Finally execute command php artisan db:seed to import all data to your database.
+
+
 ## Usage
 
 ```php

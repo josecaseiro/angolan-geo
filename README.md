@@ -43,7 +43,16 @@ class DatabaseSeeder extends Seeder
 }
 ```
 
-Finally execute commands ```bash php artisan migrate``` then ```bash php artisan db:seed``` to import all data to your database.
+Finally execute commands to import all data to your database:
+```bash 
+php artisan migrate
+```
+then
+
+```bash
+php artisan db:seed
+```
+
 
 
 ## Usage

@@ -14,8 +14,7 @@ class FixTypoInProvincias extends Migration
             });
         }
 
-        Schema::table(
-            'provincias',
+        Schema::table( 'provincias',
             function (Blueprint $table) {
                 $table->string('capital')->nullable();
             }
@@ -25,7 +24,7 @@ class FixTypoInProvincias extends Migration
     public function down()
     {
          Schema::table('provincias', function (Blueprint $table) {
-                $table->dropColumn('captital');
+                $table->dropColumn('capital');
             });
     }
 }
